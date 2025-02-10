@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+    --fundo: linear-gradient(to bottom, #2E1B0F, #8B5E3C); /* Fundo geral */
+    --gradiente-camisas: radial-gradient(circle at center, rgba(139, 94, 60, 0.8) 20%, transparent 80%);
+    --gradiente-calcas: radial-gradient(circle at center, rgba(60, 60, 60, 0.8) 20%, transparent 80%);
+    --gradiente-sapatos: radial-gradient(circle at center, rgba(90, 62, 43, 0.8) 20%, transparent 80%);
+    --camisa-bg: #8B5E3C; /* Marrom rústico */
+    --calca-bg: #3C3C3C; /* Cinza escuro */
+    --bege-color:#E3CDA8;
+    --gray-color:#3E3E3E;
+    --ice-white:#F5F5F5;
+    --sapato-bg: #5A3E2B; /* Marrom escuro */
+    --camisa-texto: #ffffff;
+    --calca-texto: #f5f5f5;
+    --sapato-texto: #eaeaea;
+
+}
+
+body {
+    background: var(--fundo);
+    color: white;
+}
+
+
+
