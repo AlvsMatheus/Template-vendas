@@ -1,26 +1,159 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@font-face{
+    font-family: "Retrotype";
+    src: url('../font/Retrotype.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --fundo: linear-gradient(to bottom, #2E1B0F, #8B5E3C); /* Fundo geral */
-    --gradiente-camisas: radial-gradient(circle at center, rgba(139, 94, 60, 0.8) 20%, transparent 80%);
-    --gradiente-calcas: radial-gradient(circle at center, rgba(60, 60, 60, 0.8) 20%, transparent 80%);
-    --gradiente-sapatos: radial-gradient(circle at center, rgba(90, 62, 43, 0.8) 20%, transparent 80%);
     --camisa-bg: #8B5E3C; /* Marrom rústico */
     --calca-bg: #3C3C3C; /* Cinza escuro */
     --bege-color:#E3CDA8;
     --gray-color:#3E3E3E;
     --ice-white:#F5F5F5;
     --sapato-bg: #5A3E2B; /* Marrom escuro */
-    --camisa-texto: #ffffff;
-    --calca-texto: #f5f5f5;
-    --sapato-texto: #eaeaea;
 
 }
 
 body {
-    background: var(--fundo);
+    background-image: var(--fundo);
     color: white;
 }
+
+#header-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right,  rgb(255, 240, 108),  rgb(255, 240, 108),#970058);
+    width: 100%;
+    height: 40px;
+}
+
+nav a {
+    color: black;
+    padding: 3px;
+}
+
+nav-itens {
+    width: 100%;
+    height: 40px;
+}
+
+
+#img-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    background-image: url(../images/cloud-cell.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+#side-p{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+}
+
+#text-header{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 140px;
+    gap: 10px;
+}
+
+#text-header p{
+    text-align: center;
+    font-family: Cinzel, sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    margin-bottom: 10px;
+
+}
+
+#login{
+    display: flex;
+    flex-flow: row nowrap; /*Deixar em ROW para pc*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    gap: 15px;
+}
+
+.sign{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 7px;
+}
+
+.sign.in{
+    background-color: transparent;
+    color: white;
+}
+
+.sign.up{
+    background-color: rgba(255, 243, 140, 0.856);
+    color: black;
+    border-radius: 10px;
+}
+
+#retro-store{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    height: 100%;
+    width: 110%;
+}
+
+#retro-store p {
+    color: rgb(255, 255, 255); /* Pode ser removido se não for necessário */
+    font-family: "Retrotype", sans-serif;
+    font-size: 80px;
+    transition: 0.5s ease;
+    background: linear-gradient(to right, white, white, yellow, white, white);
+    background-size: 200% 200%; /* Para animação funcionar */
+    -webkit-background-clip: text;
+    background-clip: text; /* Adicionando compatibilidade */
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 6s infinite linear;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+#retro-store p:hover{  
+    transform: translateY(-10px); 
+    transition: 0.5s ease-in-out; 
+}
+
+
+
 
 
 
