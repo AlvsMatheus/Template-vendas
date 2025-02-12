@@ -21,13 +21,13 @@
 }
 
 body {
-    background-image: var(--fundo);
-    color: white;
+    background-color: black;
 }
 
 #header-container{
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 100px;
 }
 
 nav {
@@ -38,7 +38,10 @@ nav {
     background-image: linear-gradient(to right, var(--magenta-color),var(--yellow-color),var(--blue-color));
     width: 100%;
     height: 40px;
+    box-shadow: 0px 0px 20px #ee005bc9;
+    z-index: 10;
 }
+
 
 nav a {
     color: black;
@@ -134,6 +137,7 @@ nav-itens {
     color: rgb(255, 255, 255); /* Pode ser removido se não for necessário */
     font-family: "grafite", sans-serif;
     font-size: 80px;
+    margin-right: 8px;
     transition: 0.5s ease;
     background: linear-gradient(to right, rgb(0, 0, 0), #EE005C, var(--yellow-color));
     background-size: 200% 200%; /* Para animação funcionar */
