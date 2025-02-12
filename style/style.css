@@ -2,21 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-@font-face{
-    font-family: "Retrotype";
-    src: url('../font/Retrotype.ttf') format('truetype');
+
+@font-face {
+    font-family: 'grafite';
+    src: url(../font/Grafite.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+
+
 :root {
     --fundo: linear-gradient(to bottom, #2E1B0F, #8B5E3C); /* Fundo geral */
-    --camisa-bg: #8B5E3C; /* Marrom rústico */
-    --calca-bg: #3C3C3C; /* Cinza escuro */
-    --bege-color:#E3CDA8;
-    --gray-color:#3E3E3E;
-    --ice-white:#F5F5F5;
-    --sapato-bg: #5A3E2B; /* Marrom escuro */
+    --blue-color: #13F0F3; /* Cinza escuro */
+    --magenta-color:#EE005C;
+    --yellow-color: #FAFF2B; /* Marrom escuro */
 
 }
 
@@ -35,7 +35,7 @@ nav {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
-    background-image: linear-gradient(to right,  rgb(255, 240, 108),  rgb(255, 240, 108),#970058);
+    background-image: linear-gradient(to right, var(--magenta-color),var(--yellow-color),var(--blue-color));
     width: 100%;
     height: 40px;
 }
@@ -56,7 +56,8 @@ nav-itens {
     align-items: center;
     justify-content: center;
     flex-flow: row nowrap;
-    background-image: url(../images/cloud-cell.jpg);
+    background-image: url(../images/background-graffiti-cell.jpg);
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -85,8 +86,10 @@ nav-itens {
     text-align: center;
     font-family: Cinzel, sans-serif;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 18px;
     margin-bottom: 10px;
+    color: white;
+    
 
 }
 
@@ -113,7 +116,7 @@ nav-itens {
 }
 
 .sign.up{
-    background-color: rgba(255, 243, 140, 0.856);
+    background-color: white;
     color: black;
     border-radius: 10px;
 }
@@ -129,15 +132,15 @@ nav-itens {
 
 #retro-store p {
     color: rgb(255, 255, 255); /* Pode ser removido se não for necessário */
-    font-family: "Retrotype", sans-serif;
+    font-family: "grafite", sans-serif;
     font-size: 80px;
     transition: 0.5s ease;
-    background: linear-gradient(to right, white, white, yellow, white, white);
+    background: linear-gradient(to right, rgb(0, 0, 0), #EE005C, var(--yellow-color));
     background-size: 200% 200%; /* Para animação funcionar */
     -webkit-background-clip: text;
     background-clip: text; /* Adicionando compatibilidade */
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 6s infinite linear;
+    animation: gradientAnimation 9s infinite linear;
   }
   
   @keyframes gradientAnimation {
