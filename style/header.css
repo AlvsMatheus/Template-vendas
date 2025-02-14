@@ -143,8 +143,8 @@ nav-itens {
     transition: 0.5s ease;
     background: linear-gradient(to right, orange,rgb(51, 255, 0),yellow);
     background-size: 200% 200%;
-    /*background: linear-gradient(to right, rgb(0, 0, 0), #EE005C, var(--yellow-color));
-    background-size: 200% 200%; /* Para animação funcionar */*/
+    /*background: linear-gradient(to right, #EE005C, var(--yellow-color));
+    background-size: 200% 200%; /* Para animação funcionar */
     -webkit-background-clip: text;
     background-clip: text; /* Adicionando compatibilidade */
     -webkit-text-fill-color: transparent;
