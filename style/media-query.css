@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media screen and (max-height:460px) and (orientation:landscape){    
+#header-container{
+    height: 460px;
+}
+#img-header{
+    height: 100%;
+}
+section.itens-container{
+    height: 800px; 
+}
+.projects-father{
+    height: 500px;
+}
+footer{
+    height: 600px;
+    width: 100%;
+}}
+
+@media screen and (min-width:1199px) {
+    nav {
+        justify-content: space-around;
+        height: 80px;
+    }
+
+    nav a {
+        color: black;
+        padding: 3px;
+        font-size: 22px;
+    }
+
+    nav a:hover{
+        background-color: rgba(61, 61, 61, 0.144);
+        border-radius: 20px;
+        color: #13F0F3;
+        padding: 10px;
+        transition: 0.5s ease;
+    }
+    
+}

@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media-query.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
 </head>
 <body>
@@ -48,23 +51,23 @@
         <div id="img-header">
             <div id="side-p">
                 <div id="text-header">
-                    <p class="txt 1">
+                    <p class="txt 1" data-aos="zoom-in">
                         If you has an urban style
                     </p>
-                    <p class="txt 2">
+                    <p class="txt 2" data-aos="zoom-in">
                         it is for you.
                     </p>
                 </div>
                 <div id="login">
-                    <div class="sign in">
+                    <div class="sign in" data-aos="zoom-in">
                         <a href="#">Sign in</a>
                     </div>
-                    <div class="sign up">
+                    <div class="sign up" data-aos="zoom-in">
                         <a href="#">Sign up</a>
                     </div>
                 </div>
             </div>
-            <div id="retro-store">
+            <div id="retro-store" data-aos="zoom-in">
                 <p>Street Style</p>
             </div>
         </div>
@@ -72,14 +75,14 @@
     <main>
         <section class="itens-container item1">
             <div class="itens-child">
-                <div class="imganditem-cell">
+                <div class="imganditem-cell" data-aos="zoom-in">
                     <div class="section-img img1">
                     <h1>
                         Shoes
                     </h1>
                     </div>
                 </div>
-                <div class="section-text p1">
+                <div class="section-text p1" data-aos="zoom-in">
                     <p>
                         The urban essence can be bold, but are your shoes keeping up? Designed for style and built for durability, our footwear lets you move through the city with confidence. Step out, stand out, and make every street your runway.
                     </p>
@@ -87,7 +90,7 @@
             </div>
         </section>
         <section class="projects-father p1">
-            <section class="projects-container">
+            <section class="projects-container" data-aos="zoom-in">
                 <div class="wrapper">                      
                     <a class="products 1">
                         <img src="images/jordan-orange-300px.png" alt="">
@@ -120,11 +123,9 @@
                 </div>
             </section> 
         </section>
-
-
         <section class="itens-container item2">
             <div class="itens-child">
-                <div class="imganditem-cell">
+                <div class="imganditem-cell" data-aos="zoom-in">
                     <div class="section-img img2">
                     <h1>
                         Pants
@@ -133,7 +134,7 @@
                     </div>
                     
                 </div>
-                <div class="section-text p2">
+                <div class="section-text p2" data-aos="zoom-in">
                     <p>
                         Streetwear is more than just a look—it's a statement. But is your fit complete? our pants are made for movement, comfort, and attitude. Pair them with your favorite jordans or mix them up for a signature vibe. Own the streets, one step at a time.
                     </p>
@@ -141,7 +142,7 @@
             </div>
         </section>
         <section class="projects-father p2">
-            <section class="projects-container">
+            <section class="projects-container" data-aos="zoom-in">
                 <div class="wrapper">                      
                     <a class="products 1">
                         <img src="images/pants-sportive.png" alt="sporty pants">
@@ -176,7 +177,7 @@
         </section>
         <section class="itens-container item3">
             <div class="itens-child">
-                <div class="imganditem-cell">
+                <div class="imganditem-cell" data-aos="zoom-in">
                     <div class="section-img img3">
                     <h1>
                         T-Shirt
@@ -185,7 +186,7 @@
                     </div>
                     
                 </div>
-                <div class="section-text p3">
+                <div class="section-text p3" data-aos="zoom-in">
                     <p>
                         Your style speaks before you do—so what's your shirt saying? From oversized tees to statement graphics and sleek minimal fits, our collection is built for those who move with confidence. Layer it up, keep it bold, and let every outfit tell your story.
                     </p>
@@ -193,7 +194,7 @@
             </div>
         </section>
         <section class="projects-father p3">
-            <section class="projects-container">
+            <section class="projects-container" data-aos="zoom-in">
                 <div class="wrapper">                      
                     <a class="products 1">
                         <img src="images/shirt-whitegirl.png" alt="white face t-shirt">
@@ -229,31 +230,41 @@
         <section>
 
         </section>
-        <footer>
+        <div>
             <button class="shop">Shop Now</button>
-        </footer>
+        </div>
         <footer>
-            <article>
-                <a href="" class="">
-
-                </a>
-                <a href="" class="">
-
-                </a>
-                <a href="" class="">
-
-                </a>
-                <a href="" class="">
-
-                </a>
-                
-                <a href="" class="">
-
-                </a>
-                <a href="" class="">
-
-                </a>
-            </article>
+            <div id="footer-links-container" data-aos="zoom-in">
+                <article class="footer-links">
+                    <h1>Shop</h1>
+                    <a href="">Shoes</a>
+                    <a href="">Pants</a>
+                    <a href="">T-shirts</a>
+                </article>
+                <article class="footer-links">
+                    <h1>Help</h1>
+                    <a href="">Suport</a>
+                    <a href="">Terms</a>
+                    <a href="">Delivery</a>
+                </article>
+                <article class="footer-links">
+                    <h1>About us</h1>
+                    <a href="">Company</a>
+                    <a href="">Features</a>
+                    <a href="">FAQ</a>
+                </article>
+            </div>
+            <div id="copycontact">
+                <div>
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+                <div data-aos="zoom-in">
+                    <p> &copy; Copyright Matheus Alves 2025. All Rights Reserved</p>
+                </div>
+            </div>
         </footer>
         
 
