@@ -19,6 +19,43 @@ footer{
 }}
 
 @media screen and (min-width:1199px) {
+
+    #header-container{
+        height: 1000px;
+        margin: 0px;
+    }
+    #img-header{
+        height: 100%;
+        background-image: url(../images/background-graffiti-pc.jpg);
+        background-position: 70% 50%;
+        background-size: cover;
+    }  
+
+    #text-header p{
+        text-align: center;
+        font-family: Cinzel, sans-serif;
+        font-weight: 300;
+        font-size: 70px;
+    }
+    #side-p{
+        padding-top: 200px;
+        justify-content: space-evenly;
+    }
+    .sign{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        padding: 7px;
+    }
+
+    #retro-store p {
+        font-size: 200px;
+    }
+    footer{
+        height: 600px;
+        width: 100%;
+    }
+    
     nav {
         justify-content: space-around;
         height: 80px;
@@ -28,14 +65,64 @@ footer{
         color: black;
         padding: 3px;
         font-size: 22px;
+        transition: 0.2s ease;
     }
 
     nav a:hover{
         background-color: rgba(61, 61, 61, 0.144);
         border-radius: 20px;
         color: #13F0F3;
-        padding: 10px;
-        transition: 0.5s ease;
+        padding: 15px;
+        text-decoration: underline;
+        transition: 0.2s ease-in;
     }
-    
+
+    section.itens-container{
+        height: 60vh;
+    }
+
+    div.itens-child{
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    div.imganditem-cell{
+        width: 400px;
+    }
+    .projects-father{
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .projects-container{
+        width: 1000px;
+    }
+
+    div.section-text{
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        height: 800px;
+    }
+
+    button{
+        display: block;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }    
 }

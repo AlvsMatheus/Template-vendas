@@ -158,8 +158,12 @@ nav-itens {
   
 
 #retro-store p:hover{  
-    transform: translateY(-10px); 
+    transform: translateY(-5px); 
     transition: 0.5s ease-in-out; 
+}
+
+button{
+    display: none;
 }
 
 
