@@ -18,7 +18,38 @@ footer{
     width: 100%;
 }}
 
+@media screen and (min-width:500px){
+    .projects-container::-webkit-scrollbar {
+        width: 6px; /* Largura da barra de rolagem */
+        height: 7px; /* Altura da barra de rolagem (para rolagem horizontal) */
+    }
+    
+    .projects-container::-webkit-scrollbar-track {
+        background: #000000; /* Cor do fundo da barra */
+    }
+    
+    .projects-container::-webkit-scrollbar-thumb {
+        background: white; /* Cor da barra */
+        border-radius: 5px;
+    }
+    
+    .projects-container::-webkit-scrollbar-thumb:hover {
+        background: #61fff259; /* Cor ao passar o mouse */
+    }
+    
+    
+    
+}
+
 @media screen and (min-width:1199px) {
+    section.projects-container{
+        display: flex;
+        align-items: center;
+        height: 400px;
+        width: 1000px;
+        overflow: auto; /*to be able the side scroll*/
+        white-space: nowrap;
+    }
 
     #header-container{
         height: 1000px;
@@ -63,7 +94,7 @@ footer{
 
     nav a {
         color: black;
-        padding: 3px;
+        padding: 8px;
         font-size: 22px;
         transition: 0.2s ease;
     }
@@ -98,7 +129,7 @@ footer{
     }
 
     .projects-container{
-        width: 1000px;
+        width: 1000px; /*Para aparecer mais de 2 cards*/
     }
 
     div.section-text{
@@ -110,19 +141,29 @@ footer{
         height: 800px;
     }
 
-    button{
-        display: block;
+    .projects-container::-webkit-scrollbar {
+        width: 6px; /* Largura da barra de rolagem */
+        height: 7px; /* Altura da barra de rolagem (para rolagem horizontal) */
     }
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
+    
+    .projects-container::-webkit-scrollbar-track {
+        background: #000000; /* Cor do fundo da barra */
     }
-    .prev { left: 10px; }
-    .next { right: 10px; }    
+    
+    .projects-container::-webkit-scrollbar-thumb {
+        background: white; /* Cor da barra */
+        border-radius: 5px;
+    }
+    
+    .projects-container::-webkit-scrollbar-thumb:hover {
+        background: #61fff259; /* Cor ao passar o mouse */
+    }
+    
+    .wrapper{
+        display: flex;
+        width: max-content;
+        gap: 80px;
+        padding: 15px;
+        scroll-behavior: smooth;
+    }
 }
